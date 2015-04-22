@@ -9,7 +9,7 @@ setup(name="gitignore-fetch",
       author_email="hello@andrewlorente.com",
       url="",
       packages=[],
-      scripts=['gitignore-fetch'],
+      scripts=['gitignore'],
       install_requires=[
           "requests>=2.6.0",
       ],

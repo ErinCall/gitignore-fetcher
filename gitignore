@@ -18,7 +18,7 @@ def main(language):
     elif response.status_code == 404:
         sys.stderr.write("""
 Couldn't find a gitignore for {language}. Try browsing https://github.com/github/gitignore/tree/master.
-Note that language names are case-sensitive (although gitignore-fetch will fix the first letter).
+Note that language names are case-sensitive.
 """.format(language=language))
         sys.exit(NOT_FOUND)
     else:
@@ -39,7 +39,7 @@ def normalize(language):
 
 def usage(code=0):
     sys.stderr.write("""
-Usage: gitignore-fetch LANGUAGE
+Usage: gitignore LANGUAGE
 
 Fetch the .gitignore defined by GitHub for LANGUAGE to the current directory.
 

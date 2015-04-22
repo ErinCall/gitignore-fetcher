@@ -5,7 +5,7 @@ A simple script for fetching the .gitignore suggested by GitHub for a given lang
 ## Usage
 
 ```Bash
-gitignore-fetch LANGUAGE
+gitignore LANGUAGE
 ```
 
 ## Installation
