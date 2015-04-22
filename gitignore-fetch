@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import sys
+import requests
+
+def main(language):
+    print(language)
+
+def usage(code=0):
+    print("""
+Usage: gitignore-fetch LANGUAGE
+
+Fetch the .gitignore defined by GitHub for LANGUAGE to the current directory.
+
+Flags:
+    -h, --help      Display this help message.
+""")
+    sys.exit(code)
+
+if __name__ == '__main__':
+    try:
+        language = sys.argv[1]
+    except IndexError:
+        usage(1)
+
+    if language == '--help' or language == '-h':
+        usage()
+
+    main(language)
